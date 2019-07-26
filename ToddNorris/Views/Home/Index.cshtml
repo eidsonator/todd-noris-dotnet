@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div id="joke">
+
+</div>
+
+<button onclick="newJoke()">Get New Joke</button>
+
+<script>
+    var Http = new XMLHttpRequest();
+    var url = window.location.href + "home/Get";
+    Http.open("GET", url);
+    Http.send();
+
+    Http.onreadystatechange = function() {
+        console.log(Http.responseText);
+        document.getElementById("joke").innerHTML = Http.responseText;
+    };
+
+    newJoke = function() {
+        Http.open("GET", url);
+        Http.send();
+    };
+</script>

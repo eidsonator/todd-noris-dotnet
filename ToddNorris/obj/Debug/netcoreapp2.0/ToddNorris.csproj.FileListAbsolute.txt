@@ -1,0 +1,10 @@
+/home/todd/Projects/ToddNorris/ToddNorris/bin/Debug/netcoreapp2.0/ToddNorris.deps.json
+/home/todd/Projects/ToddNorris/ToddNorris/bin/Debug/netcoreapp2.0/ToddNorris.runtimeconfig.json
+/home/todd/Projects/ToddNorris/ToddNorris/bin/Debug/netcoreapp2.0/ToddNorris.runtimeconfig.dev.json
+/home/todd/Projects/ToddNorris/ToddNorris/bin/Debug/netcoreapp2.0/ToddNorris.dll
+/home/todd/Projects/ToddNorris/ToddNorris/bin/Debug/netcoreapp2.0/ToddNorris.pdb
+/home/todd/Projects/ToddNorris/ToddNorris/obj/Debug/netcoreapp2.0/ToddNorris.csproj.CoreCompileInputs.cache
+/home/todd/Projects/ToddNorris/ToddNorris/obj/Debug/netcoreapp2.0/ToddNorris.AssemblyInfoInputs.cache
+/home/todd/Projects/ToddNorris/ToddNorris/obj/Debug/netcoreapp2.0/ToddNorris.AssemblyInfo.cs
+/home/todd/Projects/ToddNorris/ToddNorris/obj/Debug/netcoreapp2.0/ToddNorris.dll
+/home/todd/Projects/ToddNorris/ToddNorris/obj/Debug/netcoreapp2.0/ToddNorris.pdb
