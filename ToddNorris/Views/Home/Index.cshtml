@@ -2,11 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div id="joke">
-
+<div class="jumbotron">
+    <div id="joke">
+    </div>
 </div>
 
-<button onclick="newJoke()">Get New Joke</button>
+<button class="btn btn-primary" onclick="newJoke()">Get New Joke</button>
+
+<input class="form-control" placeholder="First Name" id="firstName"/>
+<input class="form-control" placeholder="Last Name" id="lastName"/>
+
+<button class="btn btn-success" onclick="changeName()">Submit</button>
 
 <script>
     var Http = new XMLHttpRequest();
@@ -15,12 +21,26 @@
     Http.send();
 
     Http.onreadystatechange = function() {
-        console.log(Http.responseText);
         document.getElementById("joke").innerHTML = Http.responseText;
     };
 
     newJoke = function() {
         Http.open("GET", url);
         Http.send();
+    };
+
+    changeName = function() {
+        var postUrl = window.location.href + "home/Post";
+        var data = {
+            "firstName": document.getElementById("firstName").value,
+            "lastName": document.getElementById("lastName").value 
+    };
+        var postHttp = new XMLHttpRequest();
+        postHttp.open("POST", postUrl, true);
+        postHttp.onreadystatechange = function() {
+            newJoke();
+        };
+        postHttp.setRequestHeader('Content-type','application/json; charset=utf-8');
+        postHttp.send(JSON.stringify(data));
     };
 </script>
