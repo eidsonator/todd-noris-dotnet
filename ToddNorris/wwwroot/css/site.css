@@ -33,3 +33,17 @@
         display: none;
     }
 }
+
+tr {
+    border: 0;
+}
+
+.table > tbody > tr > th {
+    text-align: right;
+    border-top: 0;
+}
+
+.table > tbody > tr > td {
+    text-align: left;
+    border: 0;
+}
